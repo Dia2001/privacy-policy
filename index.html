@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chính sách quyền riêng tư</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      padding: 20px;
+      margin: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      color: #007bff;
+      font-size: 26px;
+    }
+
+    p {
+      margin-bottom: 16px;
+    }
+
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Chính sách quyền riêng tư</h1>
+    <p id="intro"></p>
+    <p>Chúng tôi có thể thu thập một số thông tin không định danh để cải thiện trải nghiệm người dùng, bao gồm: loại thiết bị, phiên bản hệ điều hành, ngôn ngữ, và dữ liệu sử dụng cơ bản.</p>
+    <p><strong>Chúng tôi không thu thập, lưu trữ hoặc chia sẻ bất kỳ dữ liệu cá nhân nhạy cảm</strong> nào, như tên, số điện thoại, vị trí chính xác hoặc thông tin tài khoản.</p>
+    <p>Mọi dữ liệu được xử lý cục bộ hoặc qua các dịch vụ được chứng nhận tuân thủ quy định bảo mật.</p>
+    <p>Nếu bạn có bất kỳ câu hỏi nào, vui lòng liên hệ: <a href="#" id="email">Email hỗ trợ</a>.</p>
+  </div>
+
+  <script>
+    // Mapping các đơn vị
+    const data = {
+      tuyenquang: {
+        name: "BV Đa Khoa tỉnh Tuyên Quang",
+        email: "tuyenquang@gmail.vn"
+      },
+      hoangviet: {
+        name: "BV Đa Khoa Hoàng Việt",
+        email: "hoangviet@gmail.vn"
+      },
+       pktanviet: {
+        name: "Phòng khám Tân Việt",
+        email: "tuankhmt@gmail.com"
+      },
+      default: {
+        name: "ttsoft app",
+        email: "ttsoft@gmail.com"
+      }
+    };
+     const params = new URLSearchParams(window.location.search);
+  const key = params.get("app")?.toLowerCase() || "default";
+
+  const info = data[key] || data["default"];
+
+  document.getElementById("intro").innerHTML = `Ứng dụng <strong>${info.name}</strong> cam kết bảo vệ quyền riêng tư của người dùng.`;
+  document.getElementById("email").href = `mailto:${info.email}`;
+  document.getElementById("email").textContent = info.email;
+  </script>
+</body>
+</html>
