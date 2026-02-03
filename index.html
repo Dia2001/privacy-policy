@@ -101,12 +101,24 @@
         name: "BV Đa Khoa Hà Giang",
         email: "info@bvdkhagiang.org.vn"
       },
+      tuyenquangkyso: {
+        name: "TuyenQuang Sign",
+        email: "tuyenquang@gmail.vn"
+      },
+      tuyenquangbacsi: {
+        name: "BADT TQ",
+        email: "tuyenquang@gmail.vn"
+      },
+      thainguyenbacsi: {
+        name: "BADT TN",
+        email: "vanthu@bvdktuthainguyen.gov.vn"
+      },
       default: {
         name: "ttsoft app",
         email: "ttsoft@gmail.com"
       }
     };
-     const params = new URLSearchParams(window.location.search);
+  const params = new URLSearchParams(window.location.search);
   const key = params.get("app")?.toLowerCase() || "default";
 
   const info = data[key] || data["default"];
