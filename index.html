@@ -5,49 +5,194 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Chính sách quyền riêng tư</title>
   <style>
+    :root {
+      --primary: #0d6efd;
+      --primary-dark: #0b5ed7;
+      --text: #1f2937;
+      --text-muted: #5b6472;
+      --border: #e9ecef;
+      --bg: #f4f6f9;
+      --card-bg: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f8f9fa;
-      padding: 20px;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
       margin: 0;
+      padding: 24px 16px;
+      line-height: 1.65;
     }
 
     .container {
-      max-width: 800px;
-      margin: 40px auto;
-      background-color: #fff;
-      padding: 40px;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      max-width: 760px;
+      margin: 0 auto;
+      background-color: var(--card-bg);
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+      overflow: hidden;
     }
 
-    h1 {
-      color: #007bff;
+    .header {
+      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+      color: #fff;
+      padding: 36px 40px;
+    }
+
+    .header .badge {
+      display: inline-block;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      background: rgba(255, 255, 255, 0.18);
+      padding: 4px 12px;
+      border-radius: 999px;
+      margin-bottom: 12px;
+    }
+
+    .header h1 {
+      margin: 0 0 8px;
       font-size: 26px;
     }
 
+    .header p {
+      margin: 0;
+      color: rgba(255, 255, 255, 0.9);
+      font-size: 15px;
+    }
+
+    .content {
+      padding: 8px 40px 40px;
+    }
+
+    section {
+      padding: 24px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    section:last-of-type {
+      border-bottom: none;
+    }
+
+    section h2 {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 17px;
+      margin: 0 0 12px;
+      color: var(--text);
+    }
+
+    section h2 .icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 30px;
+      height: 30px;
+      border-radius: 8px;
+      background: #e7f1ff;
+      flex-shrink: 0;
+      font-size: 16px;
+    }
+
     p {
-      margin-bottom: 16px;
+      margin: 0 0 10px;
+      color: var(--text-muted);
+      font-size: 15px;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    strong {
+      color: var(--text);
+    }
+
+    .callout {
+      background: #f0f6ff;
+      border: 1px solid #d6e8ff;
+      border-radius: 10px;
+      padding: 14px 16px;
+      font-size: 14px;
+      color: var(--text);
     }
 
     a {
-      color: #007bff;
+      color: var(--primary);
+      font-weight: 600;
       text-decoration: none;
     }
 
     a:hover {
       text-decoration: underline;
     }
+
+    .footer {
+      padding: 18px 40px;
+      background: #fafbfc;
+      font-size: 13px;
+      color: var(--text-muted);
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      .header, .content, .footer {
+        padding-left: 22px;
+        padding-right: 22px;
+      }
+    }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Chính sách quyền riêng tư</h1>
-    <p id="intro"></p>
-    <p>Chúng tôi có thể thu thập một số thông tin không định danh để cải thiện trải nghiệm người dùng, bao gồm: loại thiết bị, phiên bản hệ điều hành, ngôn ngữ, và dữ liệu sử dụng cơ bản.</p>
-    <p><strong>Chúng tôi không thu thập, lưu trữ hoặc chia sẻ bất kỳ dữ liệu cá nhân nhạy cảm</strong> nào, như tên, số điện thoại, vị trí chính xác hoặc thông tin tài khoản.</p>
-    <p>Mọi dữ liệu được xử lý cục bộ hoặc qua các dịch vụ được chứng nhận tuân thủ quy định bảo mật.</p>
-    <p>Nếu bạn có bất kỳ câu hỏi nào, vui lòng liên hệ: <a href="#" id="email">Email hỗ trợ</a>.</p>
+    <div class="header">
+      <span class="badge">Privacy Policy</span>
+      <h1>Chính sách quyền riêng tư</h1>
+      <p id="intro"></p>
+    </div>
+
+    <div class="content">
+      <section>
+        <h2><span class="icon">📋</span>Thông tin chúng tôi thu thập</h2>
+        <p>Chúng tôi có thể thu thập một số thông tin không định danh để cải thiện trải nghiệm người dùng, bao gồm: loại thiết bị, phiên bản hệ điều hành, ngôn ngữ, và dữ liệu sử dụng cơ bản.</p>
+        <p><strong>Chúng tôi không thu thập, lưu trữ hoặc chia sẻ bất kỳ dữ liệu cá nhân nhạy cảm</strong> nào, như tên, số điện thoại, vị trí chính xác hoặc thông tin tài khoản.</p>
+      </section>
+
+      <section>
+        <h2><span class="icon">🗄️</span>Chính sách giữ lại dữ liệu</h2>
+        <p>Dữ liệu không định danh chỉ được lưu giữ trong thời gian cần thiết để cải thiện ứng dụng.</p>
+        <p>Chúng tôi không lưu trữ dữ liệu cá nhân của người dùng trên máy chủ.</p>
+      </section>
+
+      <section>
+        <h2><span class="icon">🗑️</span>Quyền xoá dữ liệu</h2>
+        <p>Người dùng có quyền yêu cầu xoá toàn bộ dữ liệu liên quan đến mình.</p>
+        <div class="callout">
+          Để gửi yêu cầu xoá dữ liệu, vui lòng liên hệ qua email: <a id="email-delete" href="#"></a>.
+          Chúng tôi sẽ xử lý yêu cầu trong vòng <strong>7 ngày làm việc</strong>.
+        </div>
+      </section>
+
+      <section>
+        <h2><span class="icon">🔒</span>Bảo mật</h2>
+        <p>Mọi dữ liệu được xử lý cục bộ hoặc qua các dịch vụ được chứng nhận tuân thủ quy định bảo mật.</p>
+      </section>
+
+      <section>
+        <h2><span class="icon">✉️</span>Liên hệ</h2>
+        <p>Nếu bạn có bất kỳ câu hỏi nào, vui lòng liên hệ: <a id="email-contact" href="#"></a>.</p>
+      </section>
+    </div>
+
+    <div class="footer">
+      © <span id="year"></span> <span id="app-footer-name"></span>. Đã đăng ký bản quyền.
+    </div>
   </div>
 
   <script>
@@ -162,14 +307,20 @@
         email: "ttsoft@gmail.com"
       }
     };
-  const params = new URLSearchParams(window.location.search);
-  const key = params.get("app")?.toLowerCase() || "default";
 
-  const info = data[key] || data["default"];
+    const params = new URLSearchParams(window.location.search);
+    const key = params.get("app")?.toLowerCase() || "default";
 
-  document.getElementById("intro").innerHTML = `Ứng dụng <strong>${info.name}</strong> cam kết bảo vệ quyền riêng tư của người dùng.`;
-  document.getElementById("email").href = `mailto:${info.email}`;
-  document.getElementById("email").textContent = info.email;
+    const info = data[key] || data["default"];
+
+    document.getElementById("intro").innerHTML = `Ứng dụng <strong>${info.name}</strong> cam kết bảo vệ quyền riêng tư của người dùng.`;
+    document.getElementById("app-footer-name").textContent = info.name;
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    [document.getElementById("email-delete"), document.getElementById("email-contact")].forEach((el) => {
+      el.href = `mailto:${info.email}`;
+      el.textContent = info.email;
+    });
   </script>
 </body>
 </html>
