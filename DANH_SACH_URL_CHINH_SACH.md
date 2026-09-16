@@ -4,16 +4,17 @@
 > Mỗi app (theo viện + nền tảng) dùng **một key** riêng → dán đúng link vào
 > **Privacy Policy URL** khi nộp CH Play / App Store.
 
-## 🌐 Base URL
+## 🌐 Base URL (chính thức)
 
-Thay `<BASE_URL>` bằng domain thật đang host trang này (điền 1 lần):
+Repo GitHub: <https://github.com/Dia2001/privacy-policy> → host bằng **GitHub Pages**:
 
 ```
-<BASE_URL>/index.html?app=<key>
+https://dia2001.github.io/privacy-policy/?app=<key>
 ```
 
-Ví dụ: nếu host tại `https://chinhsach.ttsoft.vn` thì Tuyên Quang iOS là
-`https://chinhsach.ttsoft.vn/index.html?app=tuyenquangios`.
+> Dán link theo mẫu trên vào ô **Privacy Policy URL** khi nộp CH Play / App Store.
+> (Có thể viết `.../privacy-policy/index.html?app=<key>` cũng được — `index.html`
+> là trang mặc định.)
 
 ---
 
@@ -36,6 +37,20 @@ Ví dụ: nếu host tại `https://chinhsach.ttsoft.vn` thì Tuyên Quang iOS l
 
 > 📌 Viện nào sau này cần **tên iOS ngắn riêng** thì thêm key `<viện>ios` (xem mục
 > "Thêm app mới" cuối file), mặc định iOS/Android dùng chung 1 key cũng được.
+
+### 🔗 Link đầy đủ (copy dán thẳng)
+```
+Tuyên Quang  Android : https://dia2001.github.io/privacy-policy/?app=tuyenquang
+Tuyên Quang  iOS     : https://dia2001.github.io/privacy-policy/?app=tuyenquangios
+Phố Nối      Android : https://dia2001.github.io/privacy-policy/?app=phonoi
+Phố Nối      iOS     : https://dia2001.github.io/privacy-policy/?app=phonoiios
+Phương Bắc           : https://dia2001.github.io/privacy-policy/?app=phuongbac
+Hoàng Việt           : https://dia2001.github.io/privacy-policy/?app=hoangviet
+Tân Việt             : https://dia2001.github.io/privacy-policy/?app=pktanviet
+Chợ Đồn              : https://dia2001.github.io/privacy-policy/?app=chodon
+Chiêm Hóa            : https://dia2001.github.io/privacy-policy/?app=chiemhoa
+Mèo Vạc              : https://dia2001.github.io/privacy-policy/?app=meovac
+```
 
 ---
 
@@ -110,7 +125,8 @@ tenkey: {
 ```
 - `tenkey`: viết **thường, không dấu, không khoảng trắng** (URL tự `.toLowerCase()`).
 - Nếu iOS cần tên ngắn riêng → thêm key `tenkeyios` với `name` ngắn hơn.
-- Dùng link: `<BASE_URL>/index.html?app=tenkey`.
+- Dùng link: `https://dia2001.github.io/privacy-policy/?app=tenkey`.
+- Commit + push lên repo `Dia2001/privacy-policy` → GitHub Pages tự cập nhật sau ~1 phút.
 
 ---
 
