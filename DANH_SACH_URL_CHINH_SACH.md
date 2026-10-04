@@ -80,6 +80,7 @@ Mèo Vạc              : https://dia2001.github.io/privacy-policy/?app=meovac
 | `thainguyenkyso` | Ký Số Thái Nguyên | vanthu@bvdktuthainguyen.gov.vn |
 | `kysothainguyen` | TWTN Sign | vanthu@bvdktuthainguyen.gov.vn |
 | `tuyenquangkyso` | Ký số TQ | tuyenquang@gmail.vn |
+| `phonoikyso` | Ký số PN | hanhmy1218@gmail.com |
 | `phuongbackyso` | PhuongBac Sign | bvdkphuongbac@gmail.com |
 | `hungyenkyso` | Ký số HY | benhviendakhoatinhhungyen@gmail.com |
 | `bariakyso` | Ký số BR | admin@benhvienbaria.com |
@@ -91,6 +92,8 @@ Mèo Vạc              : https://dia2001.github.io/privacy-policy/?app=meovac
 | `hungyendinhkemfile` | Hồ sơ HY | benhviendakhoatinhhungyen@gmail.com |
 | `tuyenquangbacsi` | Bệnh án TQ | tuyenquang@gmail.vn |
 | `tuyenquangdinhkemfile` | Hồ sơ TQ | tuyenquang@gmail.vn |
+| `phonoibacsi` | Bệnh án PN | hanhmy1218@gmail.com |
+| `phonoidinhkemfile` | Hồ sơ PN | hanhmy1218@gmail.com |
 | `thainguyenbacsi` | BADT TN | vanthu@bvdktuthainguyen.gov.vn |
 | `thainguyendoctor` | Bệnh án TN | vanthu@bvdktuthainguyen.gov.vn |
 | `thainguyenhoso` | Hồ sơ TN | vanthu@bvdktuthainguyen.gov.vn |
